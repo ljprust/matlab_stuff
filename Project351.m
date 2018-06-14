@@ -1,0 +1,30 @@
+% Logan Prust - Aer E 351 - Project R
+clear,clc;
+mu=3.986e5;
+rE=6378;
+wE=2*pi/24/3600;
+di=28.5; % degrees
+vCK=wE*rE*cosd(di);
+rTp=102+rE;
+rTa=35786+rE;
+vC3=sqrt(mu/rTa);
+vTp=sqrt(2*mu/rTp-2*mu/(rTp+rTa));
+vTa=sqrt(2*mu/rTa-2*mu/(rTp+rTa));
+dv3=sqrt(vTa^2+vC3^2-2*vTa*vC3*cosd(di));
+aT=(rTp+rTa)/2;
+HmT=rTa*vTa;
+pT=HmT^2/mu;
+eT=sqrt(1-pT/aT);
+rT15=pT/(1+eT*cosd(15));
+vT15=sqrt(2*mu/rT15-mu/aT);
+Isp1=250;
+Isp2=455;
+Isp3=240;
+g=.00981;
+eps1=.11;
+eps2=.13;
+eps3=.15;
+ve1=Isp1*g;
+ve2=Isp2*g;
+ve3=Isp3*g;
+pi3=(exp(-dv3/ve3)-eps3)/(1-eps3);

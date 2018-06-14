@@ -1,0 +1,47 @@
+Part A
+
+reduced decomp
+
+    algorithm 2 (handbook of linear algebra)
+    R=zeros(n,n)
+    Q=empty matrix
+    u_i = dnisoaniw;a
+    Q=[Q,u_i]
+    can use QR to check
+    doubly-nested FOR loop
+
+full decomp
+
+    remark 4.5.3 (10/13 or later)
+        extend ON set to basis
+    Rhat to R: pad with zeros as appropriate
+
+least squares (x=H\b in matlab)
+
+    Hx=b
+    assume A has full rank
+    thm 4.5.7
+    backsolver for Qhat: Rhat x = Qhat* b
+    no rref
+    Rhat is upper triangular
+
+Part B
+
+    3.8E-5 -> 0
+
+part 1
+
+    reduced SVD: thm 4.1.2
+    full SVD: basis extend, remarks 4.5.3, 4.1.18
+    verify: norm(U Sigma V* - L) = 0 (infinity norm?)
+    U and V are unitary and square, U*U = V*V = I
+    L is square, doesn't necessarily have full rank
+
+part 2
+
+    cor 4.3.3 for 2-norm
+
+part 3
+
+    find best 2-norm approx rank 3 to L (L3 in notes) <- thm 4.3.2
+    A_3 -> (L[k])_3
