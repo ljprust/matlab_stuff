@@ -1,0 +1,26 @@
+The gradient layer starts (in kilometers) at:
+0
+
+The isothermal layer starts (in kilometers) at:
+11
+
+The temperature at sea level (in Kelvin) is:
+288.16
+
+The pressure at sea level (in Pascals) is:
+1.01325e5
+
+The density of air at sea level (in kg/m^3) is:
+1.225
+
+The acceleration of gravity at sea level (in m/s^2) is:
+9.80065
+
+The gas constant (in J/kgK) is:
+287
+
+The lapse rate (in K/m) is:
+-6.5e-3
+
+The radius of the Earth (in kilometers) is:
+6371.0008
